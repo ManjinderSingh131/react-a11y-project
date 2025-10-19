@@ -10,4 +10,7 @@ describe('String Calculator', () => {
     test('adds numbers in a string', () => {
         expect(stringCalculator("1,2,3")).toBe(6);
     });
+    test('returns 0 for empty string', () => {
+        expect(stringCalculator("")).toBe(0);
+    });
 });
