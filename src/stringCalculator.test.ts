@@ -24,4 +24,7 @@ describe('String Calculator', () => {
     test('handles spaces and trims input', () => {
         expect(stringCalculator(" 1 , 2 , 3 ")).toBe(6);
     });
+    test('handles decimal numbers', () => {
+        expect(stringCalculator("1.5,2.5,3")).toBe(7);
+    });
 });
