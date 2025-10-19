@@ -33,4 +33,7 @@ describe('String Calculator', () => {
     test('handles negative numbers', () => {
         expect(stringCalculator("1,-2,3")).toBe(2);
     });
+    test('handles large numbers', () => {
+        expect(stringCalculator("1000,2000,3000")).toBe(6000);
+    });
 });
