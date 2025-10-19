@@ -13,4 +13,7 @@ describe('String Calculator', () => {
     test('returns 0 for empty string', () => {
         expect(stringCalculator("")).toBe(0);
     });
+    test('handles new lines as delimiters', () => {
+        expect(stringCalculator("1\n2,3")).toBe(6);
+    });
 });
