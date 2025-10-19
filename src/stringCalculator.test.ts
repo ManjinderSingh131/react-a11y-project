@@ -27,7 +27,10 @@ describe('String Calculator', () => {
     test('handles decimal numbers', () => {
         expect(stringCalculator("1.5,2.5,3")).toBe(7);
     });
-     test('returns 0 for string with only non-numeric values', () => {
+    test('returns 0 for string with only non-numeric values', () => {
         expect(stringCalculator("abc,def")).toBe(0);
+    });
+    test('handles negative numbers', () => {
+        expect(stringCalculator("1,-2,3")).toBe(2);
     });
 });
