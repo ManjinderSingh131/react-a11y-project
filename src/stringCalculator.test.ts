@@ -1,7 +1,9 @@
 import {describe, expect, test} from 'vitest';
 
 const stringCalculator = (input: string): number => {
-    return 0; // Placeholder implementation
+    if (input === "") return 0;
+    const numbers = input.split(',').map(Number);
+    return numbers.reduce((sum, num) => sum + num, 0);
 }
 
 describe('String Calculator', () => {
