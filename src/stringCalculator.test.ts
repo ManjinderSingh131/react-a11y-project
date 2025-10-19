@@ -21,4 +21,7 @@ describe('String Calculator', () => {
     test('ignores non-numeric values', () => {
         expect(stringCalculator("1,abc,3")).toBe(4);
     });
+    test('handles spaces and trims input', () => {
+        expect(stringCalculator(" 1 , 2 , 3 ")).toBe(6);
+    });
 });
