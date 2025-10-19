@@ -42,5 +42,7 @@ describe('String Calculator', () => {
     test('handles single number input', () => {
         expect(stringCalculator("5")).toBe(5);
     });
-    
+    test('handles multiple consecutive delimiters', () => {
+        expect(stringCalculator("1,,2\n\n3")).toBe(6);
+    });
 });
