@@ -39,4 +39,8 @@ describe('String Calculator', () => {
     test('handles mixed delimiters', () => {
         expect(stringCalculator("1\n2,3\n4")).toBe(10);
     });
+    test('handles single number input', () => {
+        expect(stringCalculator("5")).toBe(5);
+    });
+    
 });
