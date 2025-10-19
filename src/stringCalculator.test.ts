@@ -36,4 +36,7 @@ describe('String Calculator', () => {
     test('handles large numbers', () => {
         expect(stringCalculator("1000,2000,3000")).toBe(6000);
     });
+    test('handles mixed delimiters', () => {
+        expect(stringCalculator("1\n2,3\n4")).toBe(10);
+    });
 });
