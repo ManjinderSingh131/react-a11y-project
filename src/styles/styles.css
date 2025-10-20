@@ -80,3 +80,12 @@ button:hover {
   color: #fff;
   cursor: pointer;
 }
+
+@media (forced-colors: active) {
+  button, input, textarea {
+    border-color: WindowText;
+    background: Window;
+    color: WindowText;
+    box-shadow: none;
+  }
+}
