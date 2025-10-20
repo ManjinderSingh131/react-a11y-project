@@ -55,7 +55,11 @@ const App = () => {
           Calculate
         </button>
 
-        {result !== null && <p style={{ color: "green" }}>Result: {result}</p>}
+        {result !== null && (
+          <p className="result-text" role="status" aria-live="polite">
+            Result: {result}
+          </p>
+        )}
 
         <div>
           <p id="input-help">

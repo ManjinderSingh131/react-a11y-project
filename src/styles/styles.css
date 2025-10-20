@@ -10,7 +10,7 @@ body {
 
 .main-container {
   padding: 1.5rem;
-  background-color: "#f3f3f3";
+  background-color: #f3f3f3;
   color: #333;
 }
 
@@ -39,6 +39,12 @@ body {
   color: #fff;
   border: none;
   display: block;
+}
+
+.result-text {
+    color: #007700;
+    font-size: 1.25rem;
+    font-weight: bold;
 }
 
 button,
