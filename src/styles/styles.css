@@ -13,3 +13,16 @@ body {
     background-color: '#f3f3f3';
     color: #333;
 }
+
+.main-heading {
+    font-size: 2rem;
+    margin-bottom: 1rem;
+    font-weight: bold;
+}
+
+.form-label {
+    font-size: 1.25rem;
+    margin-bottom: 0.5rem;
+    font-weight: bold;
+    display: block;
+}
