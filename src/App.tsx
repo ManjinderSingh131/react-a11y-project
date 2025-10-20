@@ -31,6 +31,7 @@ const App = () => {
           height={400}
           alt="a piece of string on a table"
           aria-hidden="true"
+          className="string-image"
         />
       </figure>
 
