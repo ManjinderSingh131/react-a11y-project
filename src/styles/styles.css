@@ -1,0 +1,15 @@
+html {
+    font-size: 16px;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f0f0f0;
+    color: #333;
+}
+
+.main-container {
+    padding: 1.5rem;
+    background-color: '#f3f3f3';
+    color: #333;
+}

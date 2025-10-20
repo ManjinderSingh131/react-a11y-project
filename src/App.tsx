@@ -1,5 +1,7 @@
 import { useState } from 'react';
 import { stringCalculator } from './stringCalculator';
+import './styles/styles.css';
+
 const App = () => {
   const [input, setInput] = useState<string>('');
   const [result, setResult] = useState<number | null>(null);
@@ -10,12 +12,16 @@ const App = () => {
   };
 
   return (
-    <div style={{ padding: '20px', backgroundColor: '#fff', color: '#aaa' }}>
+    <main className='main-container'>
+      <figure>
       <img
         src='https://images.unsplash.com/photo-1594352161389-11756265d1b5?q=80&w=2574&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D'
         width={600}
         height={400}
+        alt='a piece of string on a table'
+        aria-hidden='true'
       />
+      </figure>
 
       <h2>String Calculator</h2>
 
@@ -44,7 +50,7 @@ const App = () => {
       <div role='alert'>
         <p>Make sure you enter numbers correctly!</p>
       </div>
-    </div>
+    </main>
   );
 };
 
