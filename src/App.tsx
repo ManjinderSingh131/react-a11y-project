@@ -11,6 +11,12 @@ const App = () => {
     setResult(sum);
   };
 
+  const handleNumberInputChange = (
+    e: React.ChangeEvent<HTMLTextAreaElement>
+  ) => {
+    setInput(e.target.value);
+  };
+
   return (
     <main className="main-container">
       <figure>
@@ -31,11 +37,13 @@ const App = () => {
         </label>
 
         <textarea
-          style={{ margin: "10px 0", color: "#aaa" }}
           placeholder="Enter numbers"
           name="number-input"
+          id="number-input"
           value={input}
-          onChange={(e) => setInput(e.target.value)}
+          onChange={handleNumberInputChange}
+          className="number-input"
+          aria-describedby="input-help"
         />
 
         <div
@@ -52,8 +60,10 @@ const App = () => {
 
         {result !== null && <p style={{ color: "green" }}>Result: {result}</p>}
 
-        <div role="alert">
-          <p>Make sure you enter numbers correctly!</p>
+        <div>
+          <p id="input-help">
+            Please enter numbers seperated by comma or new lines.
+          </p>
         </div>
       </form>
     </main>
