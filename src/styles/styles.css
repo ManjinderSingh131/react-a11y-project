@@ -81,6 +81,12 @@ button:hover {
   cursor: pointer;
 }
 
+button:disabled {
+  background-color: #cccccc;
+  color: #666666;
+  cursor: not-allowed;
+}
+
 @media (forced-colors: active) {
   button, input, textarea {
     border-color: WindowText;

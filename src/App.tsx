@@ -14,7 +14,11 @@ const App = () => {
   const handleNumberInputChange = (
     e: React.ChangeEvent<HTMLTextAreaElement>
   ) => {
-    setInput(e.target.value);
+    const value = e.target.value;
+    setInput(value);
+    if (value.trim() === "") {
+      setResult(null);
+    }
   };
 
   const handleFormSubmit = (e: React.FormEvent) => {
@@ -52,7 +56,11 @@ const App = () => {
           aria-describedby="input-help"
         />
 
-        <button className={"calculate-button"} type="submit">
+        <button
+          className={"calculate-button"}
+          type="submit"
+          disabled={input.trim() === ""}
+        >
           Calculate
         </button>
 
