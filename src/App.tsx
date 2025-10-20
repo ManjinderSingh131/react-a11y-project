@@ -17,6 +17,11 @@ const App = () => {
     setInput(e.target.value);
   };
 
+  const handleFormSubmit = (e: React.FormEvent) => {
+    e.preventDefault();
+    handleCalculate();
+  };
+
   return (
     <main className="main-container">
       <figure>
@@ -31,7 +36,7 @@ const App = () => {
 
       <h1 className="main-heading">String Calculator</h1>
 
-      <form aria-label="String Calculator Form">
+      <form aria-label="String Calculator Form" onSubmit={handleFormSubmit}>
         <label htmlFor="number-input" className="form-label">
           Enter numbers
         </label>
@@ -46,17 +51,9 @@ const App = () => {
           aria-describedby="input-help"
         />
 
-        <div
-          onClick={handleCalculate}
-          style={{
-            padding: "10px",
-            backgroundColor: "#008cba",
-            color: "#fff",
-            border: "none",
-          }}
-        >
+        <button className={"calculate-button"} type="submit">
           Calculate
-        </div>
+        </button>
 
         {result !== null && <p style={{ color: "green" }}>Result: {result}</p>}
 

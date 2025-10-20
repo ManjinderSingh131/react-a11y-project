@@ -1,36 +1,44 @@
 html {
-    font-size: 16px;
+  font-size: 16px;
 }
 
 body {
-    font-family: Arial, sans-serif;
-    background-color: #f0f0f0;
-    color: #333;
+  font-family: Arial, sans-serif;
+  background-color: #f0f0f0;
+  color: #333;
 }
 
 .main-container {
-    padding: 1.5rem;
-    background-color: '#f3f3f3';
-    color: #333;
+  padding: 1.5rem;
+  background-color: "#f3f3f3";
+  color: #333;
 }
 
 .main-heading {
-    font-size: 2rem;
-    margin-bottom: 1rem;
-    font-weight: bold;
+  font-size: 2rem;
+  margin-bottom: 1rem;
+  font-weight: bold;
 }
 
 .form-label {
-    font-size: 1.25rem;
-    margin-bottom: 0.5rem;
-    font-weight: bold;
-    display: block;
+  font-size: 1.25rem;
+  margin-bottom: 0.5rem;
+  font-weight: bold;
+  display: block;
 }
 
 .number-input {
-    padding: 0.75rem;
-    margin: 0.8rem 0rem;
-    color: #333;
+  padding: 0.75rem;
+  margin: 0.8rem 0rem;
+  color: #333;
+}
+
+.calculate-button {
+  padding: 0.75rem;
+  background-color: #008cba;
+  color: #fff;
+  border: none;
+  display: block;
 }
 
 button,
@@ -43,7 +51,6 @@ textarea {
   outline: none;
   transition: all 0.2s ease;
 }
-
 
 button:focus-visible,
 input:focus-visible,
